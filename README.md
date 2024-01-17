@@ -65,6 +65,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contributors
 
+<p align="left">
 * Dragan Constantin:
 <a href="https://www.linkedin.com/in/dragan-constantin" target="_blank">
     <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/linkedin-icon.png">
@@ -72,8 +73,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 <a href="mailto:constantin.dragan@efrei.net
 &subject=LEGO%20Global%20API
 &body=%0A-----------%0APlease%20indicate%20your%20name%20and%20surname%20and%20how%20you%20came%20to%20find%20this%20repository.%0AIf%20your%20are,%20or%20were,%20a%20student%20at%20EFREI,%20please%20indicate%20your%20class%20(along%20with%20the%20section)%0A%0AThank%20you%20in%20advance,%0AThe%20LEGO%20Global%20API%20team.%0A-----------%0A%0A" target="_blank">
-    <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/mail-icon.png">
+    <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/mail-icon.png" style="a:link{color: red;}
+">
   </a><br>
+</p>
 <br>
 
 ## Feedback
