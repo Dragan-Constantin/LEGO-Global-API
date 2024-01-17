@@ -74,3 +74,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Feedback
 
 We welcome your feedback! Feel free to open an issue or contact us directly with your suggestions or concerns.
+
+<br>
