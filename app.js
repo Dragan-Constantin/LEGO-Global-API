@@ -90,29 +90,33 @@ app.get('/api/games', (req, res) => {
     });
 });
 
-// Define routes for LEGO games
-// app.get('/api/games', (req, res) => {
-//     db.query('SELECT * FROM games', (err, result) => {
-//         if (err) {
-//             res.status(500).json({ error: 'Internal Server Error' });
-//         } else {
-//             res.status(200).json(result);
-//         }
-//     });
-// });
-
 app.post('/api/games', (req, res) => {
     const newGame = req.body;
-    db.query('INSERT INTO games SET ?', newGame, (err, result) => {
-        if (err) {
-            res.status(500).json({ error: 'Internal Server Error' });
-        } else {
-            res.status(201).json({ message: 'Game added successfully', gameId: result.insertId });
-        }
-    });
-});
+    console.log('Received request headers:', req.headers);
+    console.log('Received request params:', req.params);
+    console.log('Received request body:', req.body);
 
-// Other CRUD operations can be added similarly
+    // Remove null or undefined fields
+    Object.keys(newGame).forEach(key => newGame[key] == null && delete newGame[key]);
+
+    // Validate that the required fields are present
+    const requiredFields = ['title', 'release_date', 'platform', 'genre', 'developer', 'description'];
+    const missingFields = requiredFields.filter(field => !newGame[field]);
+
+    if (missingFields.length > 0) {
+        res.status(400).json({ error: `Missing required fields: ${missingFields.join(', ')}` });
+    } else {
+        // Insert the new game into the database
+        db.query('INSERT INTO games SET ?', newGame, (err, result) => {
+            if (err) {
+                console.error(err);
+                res.status(500).json({ error: 'Internal Server Error' });
+            } else {
+                res.status(201).json({ message: 'Game added successfully', gameId: result.insertId });
+            }
+        });
+    }
+});
 
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
