@@ -165,20 +165,26 @@ If you encounter any issues or have questions, please refer to the following tro
    - Check the server logs for details on the internal server error.
    - Check your MySQL database connection details in `dbconfig.js`.
    - Ensure that the MySQL server is runnign and accessible.
+
 2. **Error 404 - Not Found:**
 
    - For routes with IDs, check if the specified resource/ID exists in the database.
+
 3. **Error 403 - Forbidden:**
 
    - Ensure that the request has the necessary permissions to access the resource.
-   - ⚠️ Attention :
-     The LEGO Global API does not currently require authentication for public access. It is open for general use. For future enhancements or specific use cases, authentication mechanisms such as API keys or OAuth tokens may be implemented. Please refer to the API documentation for any updates on authentication requirements.
+   - ***Attention :***
+     *The LEGO Global API does not currently require authentication for public access. It is open for general use. For future enhancements or specific use cases, authentication mechanisms such as API keys or OAuth tokens may be implemented. Please refer to the API documentation for any updates on authentication requirements.*
+
 4. **General Troubleshooting:**
 
    - Review your API code for potential syntax errors or logical issues.
    - Check the console logs for any error messages.
    - Refer to the [routes API documentation](#routes) for proper request and response formats.
+
 5. **Other Issues:**
 
    - If you encounter other issues, feel free to reach out to the API administrator for assistance.
    - Additionally, you can [open an issue](https://github.com/Dragan-Constantin/LEGO-Global-API/issues) on our GitHub.
+
+<br>
