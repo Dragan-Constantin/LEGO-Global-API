@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO Global API</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/github.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <link rel="stylesheet" href="css/github_dark.css">
+    <link rel="stylesheet" href="css/github.css">
+    <script>hljs.highlightAll();</script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body x-data="{show:true}">
+    <p align="center">
+        <a href="https://github.com/Dragan-Constantin/LEGO-Global-API/" target="_blank">
+            <img alt="LEGO Global API Icon" title="Portfolio Icon" src="assets/images/README/LEGO-Global-API-Logo-transparent.png" width="325" style="border-radius:50%;">
+        </a>
+    </p>
+    <p align="center">
+        <div class="button-container">
+            <button @click="show=true">README.md</button>
+            <span style="margin:10px;"></span>
+            <button @click="show=false">API-DOCS.md</button>
+        </div>
+    </p>
+    <!--<h1>LEGO Global API</h1>
+    <script src="app.js"></scrip>-->
+    <div x-show="show" id="readme-content"></div>
+    <div x-show="!show" id="apidocs-content"></div>
+    <script>
+        fetch('README.md')
+            .then(response => response.text())
+            .then(markdown => {
+                // Parse and render Markdown content using markdown-it
+                const md = new window.markdownit({
+                    html: true,        // Enable HTML tags in source
+                    linkify: true,     // Autoconvert URL-like text to links
+                    typographer: true, // Enable smart quotes and other typographic replacements
+                    highlight: (code, lang) => {
+                    if (lang && hljs.getLanguage(lang)) {
+                        try {
+                            return hljs.highlight(lang, code).value;
+                        } catch (__) {}
+                    }
+                    return ''; // Use external default escaping
+                }});
+
+                const htmlContent = md.render(markdown);
+
+                // Display the content in the 'readme-content' div
+                document.getElementById('readme-content').innerHTML = htmlContent;
+            })
+            .catch(error => console.error('Error fetching README.md:', error));
+    </script>
+    <script>
+        fetch('docs/api-docs.md')
+            .then(response => response.text())
+            .then(markdown => {
+                // Parse and render Markdown content using markdown-it
+                const md = new window.markdownit({
+                    html: true,        // Enable HTML tags in source
+                    linkify: true,     // Autoconvert URL-like text to links
+                    typographer: true, // Enable smart quotes and other typographic replacements
+                    highlight: (code, lang) => {
+                    if (lang && hljs.getLanguage(lang)) {
+                        try {
+                            return hljs.highlight(lang, code).value;
+                        } catch (__) {}
+                    }
+                    return ''; // Use external default escaping
+                }});
+
+                const htmlContent = md.render(markdown);
+
+                // Display the content in the 'readme-content' div
+                document.getElementById('apidocs-content').innerHTML = htmlContent;
+            })
+            .catch(error => console.error('Error fetching docs/api-docs.md:', error));
+    </script>
+</body>
+</html>
