@@ -11,22 +11,33 @@ we are not affiliated, associated, or in any way officially connected LEGO, the 
 ## API Diagram
 
 ```plaintext
-+-----------------------------------------------------+
-|                  LEGO  Global  API                  |
-|                                                     |
-|  /api                                               |
-|   |-- GET                                           |
-|   |   |-- Response: { categories: ["games"] }       |
-|                                                     |
-|  /api/games                                         |
-|   |-- GET                                           |
-|   |   |-- Query Parameters: page (optional)         |
-|   |   |-- Response: { info, results }               |
-|   |                                                 |
-|   |-- GET /:id                                      |
-|       |-- URL Parameters: id (required)             |
-|       |-- Responses: 200 (OK), 404 (Not Found)      |
-+-----------------------------------------------------+
++-----------------------------------------------------------------+
+|                        LEGO  Global  API                        |
+|                                                                 |
+|  /api                                                           |
+|   |-- GET                                                       |
+|   |   |-- Response: { categories: ["games"] }                   |
+|   |   |-- Status: 200 (OK), 404 (Not Found),                    |
+|   |               500 (Internal Server Error)                   |
+|                                                                 |
+|  /api/games                                                     |
+|   |-- GET                                                       |
+|   |   |-- Query Parameters: page (optional)                     |
+|   |   |-- Response: { info, results }                           |
+|   |   |-- Status: 500 (Internal Server Error)                   |
+|   |                                                             |
+|   |-- POST                                                      |
+|   |   |-- Request: { gameData }                                 |
+|   |   |-- Response: { message, gameId }                         |
+|   |   |-- Status: 201 (Created), 400 (Bad Request),             |
+|   |               403 (Forbidden), 500 (Internal Server Error)  |
+|   |                                                             |
+|   |-- GET /:id                                                  |
+|       |-- URL Parameters: id (required)                         |
+|       |-- Responses: { gameData }                               |
+|       |-- Status: 200 (OK), 404 (Not Found),                    |
+|                   500 (Internal Server Error)                   |
++-----------------------------------------------------------------+
 ```
 
 ## Base URL
