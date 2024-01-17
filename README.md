@@ -67,8 +67,37 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <p align="left">
 &emsp;• Dragan Constantin:
-<a href="https://www.linkedin.com/in/dragan-constantin" target="_blank"><img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/linkedin-icon.png"></a>&nbsp;<a href="mailto:constantin.dragan@efrei.net&subject=LEGO%20Global%20API&body=%0A-----------%0APlease%20indicate%20your%20name%20and%20surname%20and%20how%20you%20came%20to%20find%20this%20repository.%0AIf%20your%20are,%20or%20were,%20a%20student%20at%20EFREI,%20please%20indicate%20your%20class%20(along%20with%20the%20section)%0A%0AThank%20you%20in%20advance,%0AThe%20LEGO%20Global%20API%20team.%0A-----------%0A%0A" target="_blank"><img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/mail-icon.png" style="a:link{text-decoration: none;}"></a><br>
+<a href="https://www.linkedin.com/in/dragan-constantin" target="_blank"><img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/linkedin-icon.png"></a>&nbsp;<a href="" target="_blank"><img align="center" alt="email" width="16px" src="assets/images/README/mail-icon.png" style="a:link{text-decoration: none;}"></a><br>
 </p>
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome.<br />
+Feel free to check [issues page](https://github.com/dragan-constantin/lego-global-api/issues) if you want to contribute.<br />
+[Check the contributing guide](./CONTRIBUTING.md).<br />
+
+## Author
+
+👤 **Dragan Constantin**
+
+- <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/linkedin-icon.png"> LinkedIn: [dragan-constantin](https://www.linkedin.com/in/dragan-constantin)
+- <img align="center" alt="email" width="16px" src="assets/images/README/mail-icon.png" style="a:link{text-decoration: none;}"> Mail: [constantin.dragan@efrei.net](mailto:constantin.dragan@efrei.net&subject=LEGO%20Global%20API&body=%0A-----------%0APlease%20indicate%20your%20name%20and%20surname%20and%20how%20you%20came%20to%20find%20this%20repository.%0AIf%20your%20are,%20or%20were,%20a%20student%20at%20EFREI,%20please%20indicate%20your%20class%20(along%20with%20the%20section)%0A%0AThank%20you%20in%20advance,%0AThe%20LEGO%20Global%20API%20team.%0A-----------%0A%0A)
+- Github: [@dragan-constantin](https://github.com/dragan-constantin)
+
+## Code Contributors
+<a href="https://github.com/dragan-constantin/lego-global-api/graphs/contributors"><img src="https://opencollective.com/lego-global-api/contributors.svg?width=890&button=false" /></a>
+
+## Show your support
+
+Please ⭐️ this repository if this project helped you!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y3HZDYU)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/coffeeoverflow)
+
+## 📝 License
+
+Copyright © 2024 [Dragan Constantin](https://github.com/dragan-constantin).<br>
+This project is [MIT](LICENSE) licensed.
 <br>
 
 ## Feedback
