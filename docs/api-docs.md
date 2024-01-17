@@ -163,7 +163,7 @@ If you encounter any issues or have questions, please refer to the following tro
 1. **Error 500 - Internal Server Error:**
 
    - Check the server logs for details on the internal server error.
-   - Check your MySQL database connection details in `dbconfig.js`.
+   - Check your MySQL database connection details in `.env`.
    - Ensure that the MySQL server is runnign and accessible.
 
 2. **Error 404 - Not Found:**
