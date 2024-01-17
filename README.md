@@ -16,9 +16,9 @@ we are not affiliated, associated, or in any way officially connected LEGO, the 
 
 ## Installation Guide
 
-1. Clone the repository: `git clone https://github.com/dragan-constantin/lego-global-api.git`
-  a. Navigate to the project directory: `cd lego-global-api`
-2. Or download the project: [here](https://github.com/Dragan-Constantin/LEGO-Global-API/archive/refs/heads/main.zip)
+1. Clone the repository: `git clone https://github.com/dragan-constantin/lego-global-api.git`<br>
+  &emsp;a. Navigate to the project directory: `cd lego-global-api`<br>
+  Or download the project: [here](https://github.com/Dragan-Constantin/LEGO-Global-API/archive/refs/heads/main.zip) and navigate to the project directory.
 3. Install dependencies: `npm install`
 4. Create the database using the provided [file](database/db.sql): `database/db.sql`
 5. Set up your MySQL database and update the `.env.example` file with the appropriate credentials.
