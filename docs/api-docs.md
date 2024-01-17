@@ -8,6 +8,27 @@ Welcome to the LEGO Global API documentation. This API provides information abou
 
 we are not affiliated, associated, or in any way officially connected LEGO, the LEGO Group, or any companies and/or brands mentioned on our website and api, or their subsidiaries or affiliates.
 
+## API Diagram
+
+```plaintext
++-----------------------------------------------------+
+|                  LEGO  Global  API                  |
+|                                                     |
+|  /api                                               |
+|   |-- GET                                           |
+|   |   |-- Response: { categories: ["games"] }       |
+|                                                     |
+|  /api/games                                         |
+|   |-- GET                                           |
+|   |   |-- Query Parameters: page (optional)         |
+|   |   |-- Response: { info, results }               |
+|   |                                                 |
+|   |-- GET /:id                                      |
+|       |-- URL Parameters: id (required)             |
+|       |-- Responses: 200 (OK), 404 (Not Found)      |
++-----------------------------------------------------+
+```
+
 ## Base URL
 
 The base URL for this API is `http://localhost:3000`.
@@ -128,27 +149,6 @@ The base URL for this API is `http://localhost:3000`.
     "error": "Internal Server Error"
   }
   ```
-
-## API Diagram
-
-```plaintext
-+-----------------------------------------------------+
-|                  LEGO  Global  API                  |
-|                                                     |
-|  /api                                               |
-|   |-- GET                                           |
-|   |   |-- Response: { categories: ["games"] }       |
-|                                                     |
-|  /api/games                                         |
-|   |-- GET                                           |
-|   |   |-- Query Parameters: page (optional)         |
-|   |   |-- Response: { info, results }               |
-|   |                                                 |
-|   |-- GET /:id                                      |
-|       |-- URL Parameters: id (required)             |
-|       |-- Responses: 200 (OK), 404 (Not Found)      |
-+-----------------------------------------------------+
-```
 
 ## Troubleshooting
 
