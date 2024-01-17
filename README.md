@@ -69,9 +69,9 @@ we are not affiliated, associated, or in any way officially connected LEGO, the 
 
 ## Contributors
 
-Contributions, issues and feature requests are welcome.<br />
-Feel free to check [issues page](https://github.com/dragan-constantin/lego-global-api/issues) if you want to contribute.<br />
-[Check the contributing guide](./CONTRIBUTING.md).<br />
+Contributions, issues and feature requests are welcome.
+Feel free to check [issues page](https://github.com/dragan-constantin/lego-global-api/issues) if you want to contribute.<br>
+[Check the contributing guide](./CONTRIBUTING.md).
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -87,7 +87,6 @@ Feel free to check [issues page](https://github.com/dragan-constantin/lego-globa
 
 Please ⭐️ this repository if this project helped you!
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y3HZDYU)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/coffeeoverflow)
 
 ## License
