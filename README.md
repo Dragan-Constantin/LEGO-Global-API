@@ -4,69 +4,77 @@
 
 The LEGO Global API is a RESTful API that provides information about all LEGO video-games, movies, themes and sets we could find. It allows users to retrieve details about LEGO games, paginate through the data, and access information about individual games.
 
-## Prerequisites
+## Disclaimer
 
-- Node.js (version 14.18.1)
+we are not affiliated, associated, or in any way officially connected LEGO, the LEGO Group, or any companies and/or brands mentioned on our website and api, or their subsidiaries or affiliates.
+
+## Prerequisites and Dependancies
+
+- [Node.js](https://nodejs.org) (version 14.18.1 or later)
 - MySQL database server
+- [dotenv](https://www.npmjs.com/package/dotenv) (version 16.3.1 or later)
 
 ## Installation Guide
 
 1. Clone the repository: `git clone https://github.com/dragan-constantin/lego-global-api.git`
-2. Navigate to the project directory: `cd lego-global-api`
+   a. Navigate to the project directory: `cd lego-global-api`
+2. Or download the project: [here](https://github.com/Dragan-Constantin/LEGO-Global-API/archive/refs/heads/main.zip)
 3. Install dependencies: `npm install`
-4. Set up your MySQL database and update the `dbconfig.js` file with the appropriate credentials.
-5. Run the application: `node app.js`
+4. Create the database using the provided [file](database/db.sql): `database/db.sql`
+5. Set up your MySQL database and update the `.env.example` file with the appropriate credentials.
+6. Rename `.env.example` to `.env` for it to work as intended.
+7. Run the application: `node app.js`
 
-### Troubleshooting
+## User Guide and Troubleshooting
 
 - If you encounter issues during installation, please make sure you have the correct Node.js version and that your MySQL server is running.
+- For further troubleshooting and guidance, please refer to our [documentation](docs/api-docs.md)
 
-## User Guide
+## Roadmap
 
-### Get List of Tables
+* [x] Add all pc and console LEGO Games
+* [x] Add LEGO flash games
+* [ ] Add all LEGO themes
+* [ ] Add all LEGO colours
+* [ ] Add all LEGO sets per theme
 
-- Endpoint: `/api`
-- Method: GET
-- Description: Retrieve a list of all tables in the LEGO database.
+## API Diagram
 
-### Get Paginated List of LEGO Games
-
-- Endpoint: `/api/games`
-- Method: GET
-- Parameters: `page` (optional)
-- Description: Retrieve a paginated list of LEGO games with information about the total count, pages, next page, and previous page.
-
-### Get Information About a Specific LEGO Game
-
-- Endpoint: `/api/games/:id`
-- Method: GET
-- Parameters: `id` (game ID)
-- Description: Retrieve information about a specific LEGO game by providing its ID.
-
-<!-- Include more sections as needed -->
-
-## Roadmap (Gantt Chart)
-
-![Gantt Chart](link-to-your-gantt-chart-image.png)
+```plaintext
++-----------------------------------------------------+
+|                  LEGO  Global  API                  |
+|                                                     |
+|  /api                                               |
+|   |-- GET                                           |
+|   |   |-- Response: { categories: ["games"] }       |
+|                                                     |
+|  /api/games                                         |
+|   |-- GET                                           |
+|   |   |-- Query Parameters: page (optional)         |
+|   |   |-- Response: { info, results }               |
+|   |                                                 |
+|   |-- GET /:id                                      |
+|       |-- URL Parameters: id (required)             |
+|       |-- Responses: 200 (OK), 404 (Not Found)      |
++-----------------------------------------------------+
+```
 
 ## User License
 
-This project is licensed under the [Your License Name] License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contributors
 
-- [Your Name] - [Your Contact Information]
-- [Contributor 1] - [Contact Information]
-- ...
-
-## Images
-
-![LEGO Global API](link-to-your-image.png)
-
-## Links
-
-- [Presentation Video](link-to-your-video)
-- [Implementation Example](link-to-your-example)
+* Dragan Constantin:
+<a href="https://www.linkedin.com/in/dragan-constantin" target="_blank">
+    <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/mail-icon.png">
+</a>
+<a href="mailto:constantin.dragan@efrei.net
+&subject=LEGO%20Global%20API
+&body=%0A-----------%0APlease%20indicate%20your%20name%20and%20surname%20and%20how%20you%20came%20to%20find%20this%20repository.%0AIf%20your%20are,%20or%20were,%20a%20student%20at%20EFREI,%20please%20indicate%20your%20class%20(along%20with%20the%20section)%0A%0AThank%20you%20in%20advance,%0AThe%20LEGO%20Global%20API%20team.%0A-----------%0A%0A" target="_blank">
+    <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/mail-icon.png">
+  </a><br>
+<br>
 
 ## Feedback
 
