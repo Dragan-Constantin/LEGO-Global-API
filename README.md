@@ -17,7 +17,7 @@ we are not affiliated, associated, or in any way officially connected LEGO, the 
 ## Installation Guide
 
 1. Clone the repository: `git clone https://github.com/dragan-constantin/lego-global-api.git`
-   a. Navigate to the project directory: `cd lego-global-api`
+  a. Navigate to the project directory: `cd lego-global-api`
 2. Or download the project: [here](https://github.com/Dragan-Constantin/LEGO-Global-API/archive/refs/heads/main.zip)
 3. Install dependencies: `npm install`
 4. Create the database using the provided [file](database/db.sql): `database/db.sql`
@@ -67,7 +67,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 * Dragan Constantin:
 <a href="https://www.linkedin.com/in/dragan-constantin" target="_blank">
-    <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/mail-icon.png">
+    <img align="center" alt="LinkedIn Profile" width="16px" src="assets/images/README/linkedin-icon.png">
 </a>
 <a href="mailto:constantin.dragan@efrei.net
 &subject=LEGO%20Global%20API
