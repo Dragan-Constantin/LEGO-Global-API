@@ -1,9 +1,3 @@
-<a href="https://github.com/Dragan-Constantin/LEGO_Global_API/" target="_blank">
-    <p align="center">
-        <img alt="LEGO Global API Icon" title="Portfolio Icon" src="assets/images/README/LEGO-Global-API-Logo-transparent.png" width="325" style="border-radius:50%;">
-    </p>
-</a>
-
 # LEGO Global API
 
 ## Description
@@ -17,8 +11,8 @@ The LEGO Global API is a RESTful API that provides information about all LEGO vi
 
 ## Installation Guide
 
-1. Clone the repository: `git clone https://github.com/dragan-constantin/lego_global_api.git`
-2. Navigate to the project directory: `cd lego_global_api`
+1. Clone the repository: `git clone https://github.com/dragan-constantin/lego-global-api.git`
+2. Navigate to the project directory: `cd lego-global-api`
 3. Install dependencies: `npm install`
 4. Set up your MySQL database and update the `dbconfig.js` file with the appropriate credentials.
 5. Run the application: `node app.js`
