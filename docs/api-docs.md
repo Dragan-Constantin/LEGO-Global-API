@@ -4,6 +4,10 @@
 
 Welcome to the LEGO Global API documentation. This API provides information about all the LEGO video-games, movies, themes, and sets we could find. The API supports RESTful operations for LEGO games (the rest is soon to come) and includes pagination for listing games.
 
+## Disclaimer
+
+we are not affiliated, associated, or in any way officially connected LEGO, the LEGO Group, or any companies and/or brands mentioned on our website and api, or their subsidiaries or affiliates.
+
 ## Base URL
 
 The base URL for this API is `http://localhost:3000`.
@@ -177,5 +181,4 @@ If you encounter any issues or have questions, please refer to the following tro
 5. **Other Issues:**
 
    - If you encounter other issues, feel free to reach out to the API administrator for assistance.
-
-This documentation provides an overview of the LEGO Global API, its routes, responses, and troubleshooting tips. For a visual representation, refer to the [API Diagram](#A) section
+   - Additionally, you can [open an issue](https://github.com/Dragan-Constantin/LEGO-Global-API/issues) on our GitHub.
